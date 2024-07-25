@@ -1,0 +1,38 @@
+th, td {
+    border: 1px solid black;
+    text-align: center;
+}
+
+.div-client-list {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.th-id {
+    width: 50px;
+}
+
+.th-nome {
+    width: 300px;
+}
+
+.th-cidade {
+    width: 200px;
+}
+
+.th-email {
+    width: 300px;
+}
+
+.th-telefone {
+    width: 200px;
+}
+
+.th-profissao {
+    width: 200px;
+}
+
+.link-a-cliente {
+    text-decoration: none;
+}
