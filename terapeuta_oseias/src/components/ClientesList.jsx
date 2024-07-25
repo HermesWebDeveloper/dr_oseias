@@ -11,7 +11,6 @@ function ClienteList ({tamanho_lista}) {
         let novaListaExibicao = []
         for (let i in base_clientes) {
             novaListaExibicao.push(ClienteLine(base_clientes[i]));
-            console.log(base_clientes[i]);
         };
 
         setListaExibicao(novaListaExibicao);
