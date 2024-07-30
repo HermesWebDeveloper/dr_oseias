@@ -17,13 +17,13 @@ function Cliente() {
     };
 
     const handleChange = (event) => {
-        setCliente(event.target.value)
+        setCliente({...cliente, [event.target.name]: event.target.value});
     }
 
     useEffect ( () => {
         localizar_cliente();
     }, [base_clientes]);
-
+    
     return (
         <>
             <Header />
@@ -32,7 +32,7 @@ function Cliente() {
                 <form>
                     <div className="div-lbtinput-nome d-flex flex-column">
                         <label className="lb-nome-cliente">Nome Completo: </label>
-                        <input type="text" value={cliente.nome} className="input-nome" onChange={handleChange}></input>
+                        <input type="text" value={cliente.nome} name="nome" className="input-nome" onChange={handleChange}></input>
                     </div>
                 </form>
             </div>
